@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <title>Cultivo</title>
+</head>
+<body>
+    {{>navbar}}
+
+    <div>
+       <form action="/register" method="POST">
+        <div class="box">
+            <div class="form-group">
+                <h6 id="emp"><center>Employee Registration Form</center></h6>
+                <input type="text"  class="form-control" placeholder="Organization ID*" minlength="6" maxlength="6"  onkeypress="return aplha1(event)" name="organizationid" required/>
+            </div>
+            <div class="form-group">
+                <input class="form-control" id="theInput" placeholder="Full Name*" minlength="3" maxlength="30" name="fullname" onkeypress="return aplha(event)" required/>
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" placeholder="Age*" name="age" required/>
+            </div>
+            <div class="form-group"> 
+                <input type="text" class="form-control" placeholder="Designation*" name="designation" required/>
+            </div>
+
+            <div id="register1">
+                <input type="submit" class="btnRegister" style=" background-color:rgb(45, 80, 240); border:1px solid rgb(45,80,240); color:white; border-radius: 5px;" value="Register" />
+            </div>
+        </div>
+      
+       </form>
+    </div>
+ 
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+ crossorigin="anonymous"></script>
+<script>
+        function aplha(e){
+            var k;
+            document.all ? k=e.keyCode : k=e.which;
+            return((k>64 && k<91) || (k>96 && k<123 )) 
+        }
+</script>
+<script>
+    function aplha1(e){
+        var k;
+        document.all ? k=e.keyCode : k=e.which;
+        return ((k==8 || k==32 || (k>=48 && k<=57)))
+    }
+</script>
+</body>
+</html>

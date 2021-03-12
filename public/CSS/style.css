@@ -1,0 +1,66 @@
+h1
+{
+    color: aqua;
+}
+body
+{
+    background-size: cover;
+    background-image: url(https://www.goodcore.co.uk/blog/wp-content/uploads/2019/08/coding-vs-programming-2.jpg);
+}
+a 
+{
+    text-decoration: none;
+    color: aqua;
+    text-align: right;
+}
+a:hover
+{
+    text-decoration: none;
+    color: white;
+}
+#emp
+{
+    color: aqua;
+}
+div .box
+{
+    border:2px solid lightblue;
+    height: 290px;
+    width: 250px;
+    border-radius: 25px;
+}
+button :hover
+{
+    background-color:grey;
+}
+div .log
+{
+    border:2px solid lightblue;
+    height: 250px;
+    width: 250px;
+    border-radius: 25px;
+}
+div #emp1
+{
+    color: aqua;
+    text-align: center;
+}
+div .login
+{
+    background-color: grey;
+}
+div .ach
+{
+    height: 50px;
+    width: 50px;
+}
+#Logout
+{
+    text-align: end;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+div #register1
+{
+    text-align: center;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <title>Cultivo</title>
+</head>
+<body>
+    {{>navbar}}
+
+    <div class="login">
+        <div class="log">
+             <div id="emp1"><h6><center>Employee Login</center></h6></div>
+        <form action="/login" method="POST">
+            <input type="text" class="form-control" placeholder="Organization ID" minlength="6" maxlength="6" onkeypress="return aplha1(event)" required name="organizationid">
+            <input type="text" class="form-control" id="theInput" placeholder="Full Name" minlength="3" maxlength="30" onkeypress="return aplha(event)" required name="fullname">
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
+            <a href="/register"><center>Create Account</center></a>
+        </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+ crossorigin="anonymous"></script>
+ <script>
+        function aplha(e){
+            var k;
+            document.all ? k=e.keyCode : k=e.which;
+            return((k>64 && k<91) || (k>96 && k<123 )) 
+        }
+    </script>
+<script>
+    function aplha1(e){
+        var k;
+        document.all ? k=e.keyCode : k=e.which;
+        return ((k==8 || k==32 || (k>=48 && k<=57)))
+    }
+</script>
+
+</body>
+</html>
